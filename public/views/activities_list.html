@@ -14,23 +14,30 @@
             <h3 class="panel-title">Activities List</h3>
         </div>
         <nav class="panel-body">
-            <!--<div col-md-12>-->
-                <!--<img src="/images/octodeltalogo.gif" alt="exercising octopus in Delta symbol" class="imgsmall"> <h3 class="user">Hi User!!!</h3>-->
-            <!--</div>-->
-
 
          <h3>Your Activities</h3>
         </nav>
            <nav>
-          <ul ng-repeat="activity in activities">
-           <li>Date</li>
-              <li>Activity Type</li>
-              <li>Effort</li>
-              <li>Distance</li>
-              <li>Duration</li>
+        <ul>
+          <!--<li>-->
+            <ul>
+                <li class="li_header">Date</li>
+                 <li class="li_header">Activity Type</li>
+                 <li class="li_header">Effort</li>
+                  <li class="li_header">Distance</li>
+                  <li class="li_header">Duration</li>
+            </ul>
+            <!--</li>-->
+               <ul ng-repeat="activity in activities" >
+
+                   <li>{{date}}</li>
+                   <li>{{activity_type}}</li>
+                   <li>{{effort}}</li>
+                   <li>{{distance}}{{units}}</li>
+                   <li>{{duration}}</li>
+                </ul>
           </ul>
-
-
+        <!--</ul>-->
 
            </nav>
         <div>So this place under here gets filled with activities from the Add Activities Page?</div>

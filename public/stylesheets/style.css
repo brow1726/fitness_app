@@ -13,8 +13,18 @@ a {
   width: 100px;
 
 }
+li{
+  display: inline-block;
+  width: 200px;
 
-li {
+
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 15px;
+
+}
+.li_header {
   display: inline-block;
   width: 200px;
   background-color: #959595;
@@ -47,3 +57,8 @@ li {
 .btn-primary
 {margin: 40px;
 }
+
+.btn-warning
+{margin-bottom: 10px;
+}
+
