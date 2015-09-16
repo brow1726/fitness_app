@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Activities List</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+<nav class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading" ng-controller="myCtrl">
+            <h3 class="panel-title">Activities List</h3>
+        </div>
+        <nav class="panel-body">
+            <!--<div col-md-12>-->
+                <!--<img src="/images/octodeltalogo.gif" alt="exercising octopus in Delta symbol" class="imgsmall"> <h3 class="user">Hi User!!!</h3>-->
+            <!--</div>-->
+
+
+         <h3>Your Activities</h3>
+        </nav>
+           <nav>
+          <ul ng-repeat="activity in activities">
+           <li>Date</li>
+              <li>Activity Type</li>
+              <li>Effort</li>
+              <li>Distance</li>
+              <li>Duration</li>
+          </ul>
+
+
+
+           </nav>
+        <div>So this place under here gets filled with activities from the Add Activities Page?</div>
+            <div>
+            <button type="submit" class="btn btn-primary" ng-click="view_stats">See my stats!</button></div>
+        </div>
+
+
+    </div>
+    </nav>
+
+
+
+</body>
+</html>

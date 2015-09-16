@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Activities</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading" ng-controller=""myCtrl"">
+            <h3 class="panel-title">Add Activities List</h3>
+        </div>
+        <nav class="panel-body">
+            <!--<div col-md-12>-->
+                <!--<img src="/images/octodeltalogo.gif" alt="exercising octopus in Delta symbol" class="imgsmall"> <h3 class="user">Hi User!!!</h3>-->
+            <!--</div>-->
+
+
+
+            <h3>Add Your Activity</h3>
+
+
+        </nav>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" placeholder="enter date" ng-model="date">
+            </div>
+            <div class="form-group">
+                <label for="activity_type">Activity Type:</label>
+                <input type="email" class="form-control" id="activity_type" placeholder="ex. roller skating" ng-model="activity_type">
+            </div>
+            <div class="form-group">
+                <label for="effort">Effort:</label>
+                <input type="text" class="form-control" id="effort" placeholder="easy, moderate,hard" ng-model="effort">
+            </div>
+
+            <div>
+            <div class="form-group">
+                <label for="duration">Duration:</label>
+                <input type="text" class="form-control" id="duration" placeholder="time in minutes" ng-model="duration">
+            </div>
+                <div class="form-group">
+                    <label for="distance">Distance:</label>
+                    <input type="text" class="form-control" id="distance" placeholder="distance" ng-model="distance">
+                </div>
+                <div class="form-group">
+                    <label for="units">Units:</label>
+                    <input type="text" class="form-control" id="units" placeholder="m/km, ft/m" ng-model="units">
+                </div>
+                </div>
+            <div>
+                <div class="form-group">
+                    <label for="summary">Summary:</label>
+                    <textarea name="summary" class="form-control" id="summary" placeholder="ex. ran two miles, saw family of deer" ng-model="summary"></textarea>
+                </div>
+                </div>
+            <button type="submit" class="btn btn-default" ng-click="post(date, activity_type, effort, duration, distance, units, summary)">Submit</button></div>
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

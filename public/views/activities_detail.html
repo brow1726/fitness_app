@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Activities</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading" ng-controller=""myCtrl"">
+            <h3 class="panel-title">Activities Detail</h3>
+        </div>
+        <nav class="panel-body">
+            <!--<div col-md-12>-->
+                <!--<img src="/images/octodeltalogo.gif" alt="exercising octopus in Delta symbol" class="imgsmall"> <h3 class="user">Hi User!!!</h3>-->
+            <!--</div>-->
+
+
+
+            <h3>Your {{activities.activity_type}} on {{activities.date}}</h3>
+
+
+        </nav>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="effort">Effort:</label>
+                <input type="text" class="form-control" id="effort" placeholder="easy, moderate,hard" ng-model="effort">
+            </div>
+            <div class="form-group">
+                <label for="distance">Distance:</label>
+                <input type="text" class="form-control" id="distance" placeholder="distance" ng-model="distance">
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration:</label>
+                <input type="text" class="form-control" id="duration" placeholder="time in minutes" ng-model="duration">
+            </div>
+
+
+            <div>
+
+            <div>
+                <div class="form-group">
+                    <label for="summary">Summary:</label>
+                    <textarea name="summary" class="form-control" id="summary" placeholder="ex. ran two miles, saw family of deer" ng-model="summary"></textarea>
+                </div>
+                <div>
+                <div class="form-group">
+                    <label for="comments">Comments List:</label>
+                    <textarea name="comments" class="form-control" id="comments" placeholder="ex. ran two miles, saw family of deer"></textarea>
+                </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-warning" ng-click="delete(activity.id)">Delete Activity</button></div>
+
+
+            </div>
+    </div>
+
+        </form>
+</div>
+</div>
+
+
+</body>
+</html>

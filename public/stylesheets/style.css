@@ -6,3 +6,44 @@ body {
 a {
   color: #00B7FF;
 }
+
+.imgsmall
+{
+  height: 100px;
+  width: 100px;
+
+}
+
+li {
+  display: inline-block;
+  width: 200px;
+  background-color: #959595;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+
+}
+
+.user{
+  /*text-align: right;*/
+  float: right;
+  padding-right: 65px;
+}
+
+.panel-title{
+  font-size: 26px;
+}
+.form-inline{
+  padding: 25px;
+}
+
+.form-group{
+ padding-bottom: 25px;
+}
+
+.btn-primary
+{margin: 40px;
+}
